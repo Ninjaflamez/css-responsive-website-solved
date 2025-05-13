@@ -5,13 +5,346 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
+    /* The letter color on the other css i am not allowed to edit is blocking this color from taking effect */
+    color: white;
+    border-radius: 5px;
+    background-color: grey;
+  }
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+
+li > a:first-child:hover {
+  text-decoration: white underline;
+  color: white;
+  border-radius: 5px;
+  /* background-color: grey; */
+  /* transform: scale(1.1);
+  transition: transform 0.3s ease; */
+}
+
+.facebook:hover {
+  color: white;
+  background-color: gray;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.twitter:hover {
+  color: white;
+  background-color: gray;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.linkedin:hover {
+  color: white;
+  background-color: gray;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.linked-in:hover {
+  color: white;
+  background-color: gray;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.instagram:hover {
+  color: white;
+  background-color: grey;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (min-width: 768px) AND (max-width: 1023px) {
+  .top-navigation > ul {
+    display: none;
+  }
+  
+  .portfolio-list {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+
+  .item-description {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .teammate-list {
+    display: flex;
+    flex-flow: column nowrap;
+    width:50%;
+  }
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .teammate {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 5px);
+  }  
+  
+  .teammate-img-wrapper {
+    display: flex;
+  }
+  
+  .teammate-data {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .teammate-social-icons  {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* .icon:hover {
+    color: white;
+    background-color: gray;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+  } */
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .facebook:hover {
+    color: black;
+    background-color: gray;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .twitter:hover {
+    color: black;
+    background-color: gray;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .linkedin:hover {
+    color: black;
+    background-color: gray;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .linked-in:hover {
+    color: black;
+    background-color: gray;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .instagram:hover {
+    color: black;
+    background-color: grey;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .teammates-list:before {
+    display: none;
+  }
+  
+  .teammates-list:after {
+    display: none;
+  }
+
+  li > a:first-child:hover {
+    text-decoration: white underline;
+    color: white;
+  }
+
+  .footer-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+  .social-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons span {
+    display: none;
+  }
+
+  .footer-contacts {
+  display: flex;
+  flex-flow: row wrap;
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 130px;
+}
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 767px) {
+  .top-navigation > ul {
+    display: none;
+  }
+  
+  .header-content {
+    border-bottom: 1px black solid;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .portfolio-list {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+
+  .item-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .teammates-list-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.teammate {
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid black;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.teammate-img-wrapper {
+  display: flex;
+}
+
+.teammate-data {
+  display: flex;
+  width: 100%;
+}
+
+.teammate-social-icons  {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.facebook:hover {
+  color: white;
+  background-color: gray;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.twitter:hover {
+  color: white;
+  background-color: gray;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.linkedin:hover {
+  color: white;
+  background-color: gray;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.linked-in:hover {
+  color: white;
+  background-color: grey;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.instagram:hover {
+  color: white;
+  background-color: grey;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.teammates-list:before {
+  display: none;
+}
+
+.teammates-list:after {
+  display: none;
+}
+
+.footer-content {
+display: flex;
+flex-flow: column nowrap;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+li > a:first-child:hover {
+  text-decoration: white underline;
+  color: white;
+}
+
+
+}
