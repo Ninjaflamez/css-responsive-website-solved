@@ -143,43 +143,10 @@ li > a:first-child:hover {
     justify-content: center;
     align-items: center;
   }
-
-  .facebook:hover {
-    color: black;
-    background-color: gray;
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    border-radius: 5px;
-  }
   
-  .twitter:hover {
+  .instagram:hover, .linked-in:hover, .linkedin:hover, .twitter:hover, .facebook:hover {
     color: black;
-    background-color: gray;
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    border-radius: 5px;
-  }
-  
-  .linkedin:hover {
-    color: black;
-    background-color: gray;
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    border-radius: 5px;
-  }
-  
-  .linked-in:hover {
-    color: black;
-    background-color: gray;
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    border-radius: 5px;
-  }
-  
-  .instagram:hover {
-    color: black;
-    background-color: grey;
-    transform: scale(1.1);
+    transform: scale(1.5);
     transition: transform 0.3s ease;
     border-radius: 5px;
   }
@@ -196,7 +163,7 @@ li > a:first-child:hover {
     text-decoration: white underline;
     color: white;
   }
-  
+
   .footer-content {
   display: flex;
   flex-flow: row wrap;
@@ -231,6 +198,17 @@ li > a:first-child:hover {
   align-items: center;
   gap: 130px;
 }
+
+  .facebook, .linked-in, .instagram, .twitter {
+    display: flex;
+    width: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
 }
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
