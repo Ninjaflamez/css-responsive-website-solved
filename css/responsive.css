@@ -95,6 +95,10 @@ li > a:first-child:hover {
     width:50%;
   }
 
+  .teammate-content .subtext {
+    width: 350px;
+  }
+
   .teammates-list-wrapper {
     display: flex;
     flex-flow: row wrap;
